@@ -1,39 +1,8 @@
 var express = require('express');
 var app = express();
 
-console.log("Hello World! WOOOOO!");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.get('/', (req, res) => {
+    console.log(`Hello World! WOOOO!`);
+  });
 
  module.exports = app;

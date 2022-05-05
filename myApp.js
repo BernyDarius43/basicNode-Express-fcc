@@ -9,5 +9,7 @@ app.get('/', (req, res) => {
     res.sendFile(absolutePath)
     // console.log(`Hello World! WOOOO!`);
   });
-
+app.get('/json', (req, res) => {
+  res.json({"message": "Hello json"})
+})
  module.exports = app;

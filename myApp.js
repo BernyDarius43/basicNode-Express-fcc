@@ -10,6 +10,6 @@ app.get('/', (req, res) => {
     // console.log(`Hello World! WOOOO!`);
   });
 app.get('/json', (req, res) => {
-  res.json({"message": "Hello json"})
-})
+  res.json({message: "Hello json"})
+});
  module.exports = app;

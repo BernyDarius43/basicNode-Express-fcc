@@ -1,10 +1,9 @@
 let express = require('express');
-let absolutePathCss = __dirname + '/public'
-express.static(absolutePathCss)
-
 let app = express();
 app.use(absolutePathCss)
-var absolutePath =  __dirname + '/views/index.html'
+let absolutePath =  __dirname + '/views/index.html'
+let absolutePathCss = __dirname + '/public'
+app.use(express.static(absolutePathCss))
 
 app.get('/', (req, res) => {
     //res.send('Hello Express')

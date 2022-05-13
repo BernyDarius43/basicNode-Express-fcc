@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 app.get('/json', (req, res) => {
   if (process.env.MESSAGE_STYLE != "uppercase") {
-    res.json({message: "failed"})
+    res.json({message: "hello json"})
   } else res.json({ message: "HELLO JSON" })
 });
 module.exports = app;

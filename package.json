@@ -1,14 +1,19 @@
 {
 	"author": "Berny Darius",
 	"description": "A demo",
-	"keywords": ["Node & Express", "freecodecamp", "backend API"],
+	"keywords": [
+		"Node & Express",
+		"freecodecamp",
+		"backend API"
+	],
 	"license": "MIT",
 	"name": "fcc-learn-node-with-express",
 	"version": "0.1.0",
 	"dependencies": {
-		"express": "^4.14.0",
 		"body-parser": "^1.15.2",
-		"cookie-parser": "^1.4.3"
+		"cookie-parser": "^1.4.3",
+		"express": "^4.14.0",
+		"fcc-express-bground": "0.0.5"
 	},
 	"main": "server.js",
 	"scripts": {

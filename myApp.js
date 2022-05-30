@@ -5,6 +5,14 @@ let absolutePath = __dirname + '/views/index.html'
 let absolutePathCss = __dirname + '/public'
 app.use('/public', express.static(absolutePathCss))
 
+
+// Implement a Root-Level Request Logger Middleware
+function middlewareTest (req, res, next) {
+  console.log(`${req.method} ${req.path} - ${req.ip}`);
+  next();
+}
+
+app.use(middlewareTest)
 app.get('/', (req, res) => {
   //res.send('Hello Express')
   res.sendFile(absolutePath)
@@ -19,4 +27,8 @@ app.get('/json', (req, res) => {
   } 
    res.json({message: response})
 });
+
+
+
+
 module.exports = app;

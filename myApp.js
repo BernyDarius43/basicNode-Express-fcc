@@ -12,7 +12,7 @@ app.use('/public', express.static(absolutePathCss))
 //   next();
 // }
 
-app.use((req, res, next) => {
+app.use(function (req, res, next) {
   console.log(`${req.method} ${req.path} - ${req.ip}`);
   next();
 })
